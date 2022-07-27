@@ -45,7 +45,7 @@ This example creates a new barcode detector object, with specified supported for
 var barcodeDetector = new BarcodeDetector({formats: ['code_39', 'codabar', 'ean_13']});
 
 // check compatibility
-if (barcodeDetector) {
+if (typeof BarcodeDetector != 'undefined') {
   console.log('Barcode Detector supported!');
 } else {
   console.log('Barcode Detector is not supported by this browser.');
